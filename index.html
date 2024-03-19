@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamburins</title>
+
+<style>
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+    h1 {
+        font-size: 25px;
+        align-items: left;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    body {
+      line-height: inherit;
+    }
+
+    main {
+      display: block;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    body {
+        background: pink;
+        font-family: Arial;
+        font-size: 30px;
+        text-transform: uppercase;
+        line-height: inherit;
+    }
+    
+    header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: left;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 25px;
+        font-size: 19px;
+
+      }
+
+      div {
+        width: 50%;
+        height: 50%;
+        color: white:
+      }
+
+      .logo {
+        height: 30px;
+        margin-top: 10px;
+      }
+
+      nav {
+        position: fixed;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 999;
+        display: flex;
+        margin-top: 24px;
+        margin-left: 300px;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 23px;
+      }
+
+      figcaption {
+        position: absolute;
+        bottom: 20px;
+        left: 35px;
+        color: white;
+        font-size: 25px;
+        padding: 0;
+        margin-top: 300px;
+      }
+
+      .gallery1,
+      .gallery2,
+      .gallery3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 100vw; /* Set gallery width to viewport width */
+        height: 100vh; /* Set gallery height to viewport height */
+        margin: 0; /* Remove any default margins */
+        padding: 0; /* Remove any default padding */
+      }
+
+      .gallery1 img,
+      .gallery2 img,
+      .gallery3 img {
+        width: 100%; /* Ensure images fill their respective figure containers */
+        height: 100%; /* Ensure images fill their respective figure containers */
+        object-fit: cover; /* Ensure the entire image is visible, even if it has to be cropped */
+      }
+
+      .gallery1 figure,
+      .gallery2 figure,
+      .gallery3 figure {
+        height: 100%;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      .img-jennie,
+      .img-perfume,
+      .img-sparkle,
+      .img-candle,
+      .img-lotion,
+      .img-jred {
+        flex: 1;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .img-jennie {
+        background-image: url('jennie.jpeg');
+      }
+
+      .img-perfume {
+        background-image: url('perfume.jpeg');
+      }
+
+      .img-sparkle {
+        background-image: url('sparkle.jpeg');
+      }
+
+      .img-candle {
+        background-image: url('candle.jpeg');
+      }
+
+      .img-lotion {
+        background-image: url('lotion.jpg');
+      }
+
+      .img-jred {
+        background-image: url('jred.jpg');
+      }
+
+
+</style>
+</head>
+
+<body>
+  <header>
+      <a href="#">
+          <img class="logo" src="logo.svg" alt="logo" /> 
+      </a>
+  </header>
+
+  <main>
+    <nav>
+      <a href="#">Perfume</a>
+      <a href="#">Hand&Lip</a>
+      <a href="#">Body</a>
+      <a href="#">Home Fragrance</a>
+      <a href="#">Store</a>
+    </nav>  
+    
+    <div class="gallery1">
+      <figure class="figure-jennie">
+        <img class="img-jennie" src="jennie.jpeg">
+        <figcaption>PERFUME BALM</figcaption>
+      </figure>
+
+      <figure class="figure-perfume">
+        <img class="img-perfume" src="perfume.jpeg">
+        <figcaption>PERFUME BALM</figcaption>
+      </figure>
+      </div>
+
+    <div class="gallery2">
+      <figure>
+        <img class="img-sparkle" src="sparkle.jpeg">
+        <figcaption>PERFUME 50ML</figcaption>
+      </figure>
+
+      <figure>
+        <img class="img-candle" src="candle.jpeg">
+        <figcaption>PERFUME CANDLE</figcaption>
+      </figure>
+    </div>
+
+    <div class="gallery3">
+      <figure>
+        <img class="img-lotion" src="lotion.jpg">
+        <figcaption>PERFUME SHELL X</figcaption>
+      </figure>
+
+      <figure>
+        <img class="img-jred" src="jred.jpg">
+        <figcaption>PERFUME SHELL X</figcaption>
+      </figure>
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+
